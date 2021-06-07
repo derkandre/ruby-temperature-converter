@@ -27,7 +27,7 @@ options = Array["a", "b", "c", "d"]
 print "Option: ".light_green
 users_choice = gets.chomp()
 
-if users_choice == options[0] 
+if users_choice == options[0] # selects option "a" as the index position for it is 0
 	then # convert celsius to fahrenheit
 
 	print "\n▃▃▃ Celsius to Fahrenheit ▃▃▃\n".light_green
@@ -35,7 +35,7 @@ if users_choice == options[0]
 
 	fahrenheit = gets.chomp()
 
-	if fahrenheit =~ /\d/
+	if fahrenheit =~ /\d/ # to accept only numeric data from the user
 		then # that's a valid numeric input; proceed to converison
 
 		print conv_temp
