@@ -3,11 +3,11 @@ A simple tool written in Ruby for conversion of temperature.
 
 ## Supported Conversions 
 - [X] Celsius to Fahrenheit
-- [ ] Celsius to Kelvin
+- [X] Celsius to Kelvin
 - [X] Fahrenheit to Celsius
-- [ ] Fahrenheit to Kelvin
-- [ ] Kelvin to Celsius
-- [ ] Kelvin to Fahrenheit
+- [X] Fahrenheit to Kelvin
+- [X] Kelvin to Celsius
+- [X] Kelvin to Fahrenheit
 
 ## Preview
 ![](Preview.png)
@@ -17,15 +17,15 @@ A simple tool written in Ruby for conversion of temperature.
 Download here => https://www.ruby-lang.org/en/downloads/ <br/>
 Easy Installer => https://rubyinstaller.org/downloads/
 
-Download or clone this git repository first and open your terminal or the powershell and <br/>change directory to the location of the repository folder<br/>
-Example: <br/>
+Download or clone this git repository first and open your terminal or the <br/> powershell and change directory to where the repository folder is located.<br/>
+#### Example: <br/>
 ```
 cd C:\Users\User\Downloads\ruby-temperature-converter
 ```
 
 And then execute the script <br/>
 ```
-ruby main.rb </code>
+ruby main.rb
 ```
 
 ## Notice
