@@ -19,10 +19,14 @@ Easy Installer => https://rubyinstaller.org/downloads/
 
 Download or clone this git repository first and open your terminal or the powershell and <br/>change directory to the location of the repository folder<br/>
 Example: <br/>
-<code> cd C:\Users\User\Downloads\ruby-temperature-converter </code>
+```
+cd C:\Users\User\Downloads\ruby-temperature-converter
+```
 
 And then execute the script <br/>
-<code> ruby main.rb </code>
+```
+ruby main.rb </code>
+```
 
 ## Notice
 I am new to Ruby and if you have any suggestions in improvidng the code, I would be greatful.
