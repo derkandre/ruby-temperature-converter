@@ -10,6 +10,7 @@ not_valid_option = "Not a valid option".light_red
 unit_symbols = {
 	:C => "C",
 	:F => "F",
+	:K => "K"
 }
 
 print """▃▃▃▃▃▃▃▃▃▃▃▃▃▃▃▃▃▃▃▃▃▃▃▃▃▃▃▃▃
@@ -49,7 +50,7 @@ if users_choice == options[0] # selects option "a" as the index position for it 
 		print degree_symbol(:F)
 		print "\n▃▃▃▃▃▃▃▃▃▃▃▃▃▃▃▃▃▃▃▃▃▃▃▃▃▃▃▃▃".light_green
 	else
-		print not_valid_input.light_red
+		print not_valid_input
 	end
 
 elsif users_choice == options[1]
@@ -68,7 +69,7 @@ elsif users_choice == options[1]
 		print :K # Kelvin is an absolute temperature scale. does not have a degree sign
 		print "\n▃▃▃▃▃▃▃▃▃▃▃▃▃▃▃▃▃▃▃▃▃▃▃▃▃▃▃▃▃".light_green
 	else
-		print not_valid_input.light_red
+		print not_valid_input
 	end
 	
 elsif users_choice == options[2]
@@ -87,7 +88,7 @@ elsif users_choice == options[2]
 		print degree_symbol(:C)
 		print "\n▃▃▃▃▃▃▃▃▃▃▃▃▃▃▃▃▃▃▃▃▃▃▃▃▃▃▃▃▃".light_green
 	else
-		print "Not a valid numeric input".light_red
+		print not_valid_input
 	end
 
 elsif users_choice == options[3]
@@ -152,5 +153,30 @@ elsif users_choice == options[5]
 	end
 
 else
-	print not_valid_input.light_red
+	print not_valid_option
+	print "\n▃▃▃▃▃▃▃▃▃▃▃▃▃▃▃▃▃▃▃▃▃▃▃▃▃▃▃▃▃".light_green
+end
+
+# Option if the user wants to end the execution of the code
+exit_options = Array["a", "b"]
+puts """\nConvert another temperature?
+➣ [a] = Yes 
+➣ [b] = No
+▃▃▃▃▃▃▃▃▃▃▃▃▃▃▃▃▃▃▃▃▃▃▃▃▃▃▃▃▃
+""".light_green
+print "Option: ".light_green
+end_code = gets.chomp()
+
+if end_code == exit_options[0]
+	then # terminate the code
+	system ("ruby main.rb")
+elsif end_code == exit_options[1]
+	then # terminate the code
+	print "▃▃▃▃▃▃▃▃▃▃▃▃▃▃▃▃▃▃▃▃▃▃▃▃▃▃▃▃▃".light_green
+	exit!
+else # if the user did not input either option "a" or "b"
+	puts "▃▃▃▃▃▃▃▃▃▃▃▃▃▃▃▃▃▃▃▃▃▃▃▃▃▃▃▃▃".light_green
+	puts not_valid_option
+	puts "Will terminate the code...".light_yellow
+	exit!
 end

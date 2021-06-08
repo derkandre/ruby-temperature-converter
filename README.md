@@ -17,7 +17,7 @@ A simple tool written in Ruby for conversion of temperature.
 Download here => https://www.ruby-lang.org/en/downloads/ <br/>
 Easy Installer => https://rubyinstaller.org/downloads/
 
-Download or clone this git repository first and open your terminal or the <br/> powershell and change directory to where the repository folder is located.<br/>
+Download or clone this git repository next and open your terminal or the <br/> powershell and change directory to where the repository folder is located.<br/>
 #### Example: <br/>
 ```
 cd C:\Users\User\Downloads\ruby-temperature-converter
@@ -29,7 +29,7 @@ ruby main.rb
 ```
 
 ## Notice
-I am new to Ruby and if you have any suggestions in improvidng the code, I would be greatful.
+This is a practice repo and I am new to Ruby and if you have any suggestions in improving the code, I would be grateful.
 
 
 
