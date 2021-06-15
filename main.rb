@@ -30,11 +30,11 @@ Nota Bene: Please select only
 """.light_green
 
 # Index Position 0    1    2    3    4    5 
-options = Array["a", "b", "c", "d", "e", "f"]
+temp_options = Array["a", "b", "c", "d", "e", "f"]
 print "Option: ".light_green
 users_choice = gets.chomp()
 
-if users_choice == options[0] # selects option "a" as the index position for it is 0
+if users_choice == temp_options[0] # selects option "a" as the index position for it is 0
 	then # convert celsius to fahrenheit
 
 	print "\n▃▃▃ Celsius to Fahrenheit ▃▃▃\n".light_green
@@ -53,7 +53,7 @@ if users_choice == options[0] # selects option "a" as the index position for it 
 		print not_valid_input
 	end
 
-elsif users_choice == options[1]
+elsif users_choice == temp_options[1]
 	then # convert from celsius to kelvin
 
 	print "\n▃▃▃ Celsius to Kelvin ▃▃▃\n".light_green
@@ -72,7 +72,7 @@ elsif users_choice == options[1]
 		print not_valid_input
 	end
 	
-elsif users_choice == options[2]
+elsif users_choice == temp_options[2]
 	then # convert from fahrenheit to celsius
 
 	print "\n▃▃▃ Fahrenheit to Celsius ▃▃▃\n".light_green
@@ -91,7 +91,7 @@ elsif users_choice == options[2]
 		print not_valid_input
 	end
 
-elsif users_choice == options[3]
+elsif users_choice == temp_options[3]
 	then # convert from fahrenheit to kelvin
 
 	print "\n▃▃▃ Fahrenheit to Kelvin ▃▃▃\n".light_green
@@ -111,7 +111,7 @@ elsif users_choice == options[3]
 		print not_valid_input
 	end
 
-elsif users_choice == options[4]
+elsif users_choice == temp_options[4]
 	then # convert from kelvin to celsius
 
 	print "\n▃▃▃ Kelvin to Celsius ▃▃▃\n".light_green
@@ -132,7 +132,7 @@ elsif users_choice == options[4]
 	end
 
 
-elsif users_choice == options[5]
+elsif users_choice == temp_options[5]
 	then # convert from kelvin to fahrenheit
 
 	print "\n▃▃▃ Kelvin to fahrenheit ▃▃▃\n".light_green
@@ -158,19 +158,19 @@ else
 end
 
 # Option if the user wants to end the execution of the code
-exit_options = Array["a", "b"]
+code_options = Array["a", "b"]
 puts """\nConvert another temperature?
 ➣ [a] = Yes 
 ➣ [b] = No
 ▃▃▃▃▃▃▃▃▃▃▃▃▃▃▃▃▃▃▃▃▃▃▃▃▃▃▃▃▃
 """.light_green
 print "Option: ".light_green
-end_code = gets.chomp()
+users_choice2 = gets.chomp()
 
-if end_code == exit_options[0]
-	then # terminate the code
+if users_choice2 == code_options[0]
+	then # re-execute the code
 	system ("ruby main.rb")
-elsif end_code == exit_options[1]
+elsif users_choice2 == code_options[1]
 	then # terminate the code
 	print "▃▃▃▃▃▃▃▃▃▃▃▃▃▃▃▃▃▃▃▃▃▃▃▃▃▃▃▃▃".light_green
 	exit!
